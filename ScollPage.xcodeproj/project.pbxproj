@@ -14,6 +14,9 @@
 		0FC5D3071C948E390037D1C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FC5D3051C948E390037D1C5 /* LaunchScreen.storyboard */; };
 		0FC5D3121C948E390037D1C5 /* ScollPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5D3111C948E390037D1C5 /* ScollPageTests.swift */; };
 		0FC5D31D1C948E390037D1C5 /* ScollPageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC5D31C1C948E390037D1C5 /* ScollPageUITests.swift */; };
+		0FE284241C98978C005C8542 /* BasePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE284231C98978C005C8542 /* BasePageVC.swift */; };
+		0FE284261C989E08005C8542 /* ContentPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE284251C989E08005C8542 /* ContentPageVC.swift */; };
+		0FEA525D1C97F07300F020F9 /* ContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEA525C1C97F07300F020F9 /* ContentView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		0FC5D3181C948E390037D1C5 /* ScollPageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScollPageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FC5D31C1C948E390037D1C5 /* ScollPageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScollPageUITests.swift; sourceTree = "<group>"; };
 		0FC5D31E1C948E390037D1C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FE284231C98978C005C8542 /* BasePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePageVC.swift; sourceTree = "<group>"; };
+		0FE284251C989E08005C8542 /* ContentPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentPageVC.swift; sourceTree = "<group>"; };
+		0FEA525C1C97F07300F020F9 /* ContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				0FC5D2FC1C948E390037D1C5 /* AppDelegate.swift */,
-				0FC5D2FE1C948E390037D1C5 /* ViewController.swift */,
 				0FC5D3001C948E390037D1C5 /* Main.storyboard */,
+				0FC5D2FE1C948E390037D1C5 /* ViewController.swift */,
+				0FE284231C98978C005C8542 /* BasePageVC.swift */,
+				0FE284251C989E08005C8542 /* ContentPageVC.swift */,
+				0FEA525C1C97F07300F020F9 /* ContentView.xib */,
 				0FC5D3031C948E390037D1C5 /* Assets.xcassets */,
 				0FC5D3051C948E390037D1C5 /* LaunchScreen.storyboard */,
 				0FC5D3081C948E390037D1C5 /* Info.plist */,
@@ -232,6 +241,7 @@
 				0FC5D3071C948E390037D1C5 /* LaunchScreen.storyboard in Resources */,
 				0FC5D3041C948E390037D1C5 /* Assets.xcassets in Resources */,
 				0FC5D3021C948E390037D1C5 /* Main.storyboard in Resources */,
+				0FEA525D1C97F07300F020F9 /* ContentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +268,8 @@
 			files = (
 				0FC5D2FF1C948E390037D1C5 /* ViewController.swift in Sources */,
 				0FC5D2FD1C948E390037D1C5 /* AppDelegate.swift in Sources */,
+				0FE284241C98978C005C8542 /* BasePageVC.swift in Sources */,
+				0FE284261C989E08005C8542 /* ContentPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScollPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AM.ScollPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScollPage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AM.ScollPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +498,7 @@
 				0FC5D3231C948E390037D1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FC5D3241C948E390037D1C5 /* Build configuration list for PBXNativeTarget "ScollPageTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +507,7 @@
 				0FC5D3261C948E390037D1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FC5D3271C948E390037D1C5 /* Build configuration list for PBXNativeTarget "ScollPageUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +516,7 @@
 				0FC5D3291C948E390037D1C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
